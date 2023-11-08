@@ -9,8 +9,15 @@ module.exports = function (config, env) {
         name: "Mfe1",
         exposes: {
           "./Title": "./src/components/Title",
+          "./NavBar": "./src/components/NavBar",
+          "./Dogs": "./src/pages/Dogs",
+          "./Cats": "./src/pages/Cats",
         },
         filename: "remoteEntry.js",
+        remotes: {
+          Mfe2: `Mfe2@http://localhost:3002/remoteEntry.js`,
+          Mfe3: `Mfe3@http://localhost:3003/remoteEntry.js`,
+        },
         shared: {
           ...dependencies,
           react: {
@@ -21,6 +28,11 @@ module.exports = function (config, env) {
           "react-dom": {
             singleton: true,
             requiredVersion: dependencies["react-dom"],
+            eager: true,
+          },
+          "react-router-dom": {
+            singleton: true,
+            requiredVersion: dependencies["react-router-dom"],
             eager: true,
           },
         },

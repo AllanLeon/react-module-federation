@@ -1,7 +1,10 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
-import Title from './components/Title';
+import './Home.css';
+import Mfe1Title from 'Mfe1/Title';
+import Mfe2Title from 'Mfe2/Title';
+import Mfe3Title from 'Mfe3/Title';
+import RemoteWrapper from '../../components/RemoteWrapper';
 
 function App() {
   return (
@@ -19,7 +22,9 @@ function App() {
         >
           Learn React
         </a>
-        <Title />
+        <RemoteWrapper><Mfe1Title /></RemoteWrapper>
+        <RemoteWrapper><Mfe2Title /></RemoteWrapper>
+        <RemoteWrapper><Mfe3Title /></RemoteWrapper>
       </header>
     </div>
   );

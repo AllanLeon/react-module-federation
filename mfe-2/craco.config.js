@@ -12,8 +12,13 @@ module.exports = {
           name: "Mfe2",
           exposes: {
             "./Title": "./src/components/Title",
+            "./Pokemon": "./src/pages/Pokemon",
           },
           filename: "remoteEntry.js",
+          remotes: {
+            Mfe1: `Mfe1@http://localhost:3001/remoteEntry.js`,
+            Mfe3: `Mfe3@http://localhost:3003/remoteEntry.js`,
+          },
           shared: {
             ...dependencies,
             react: {
@@ -24,6 +29,11 @@ module.exports = {
             "react-dom": {
               singleton: true,
               requiredVersion: dependencies["react-dom"],
+              eager: true,
+            },
+            "react-router-dom": {
+              singleton: true,
+              requiredVersion: dependencies["react-router-dom"],
               eager: true,
             },
           },
