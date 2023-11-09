@@ -1,10 +1,6 @@
-import React from 'react';
-import logo from './logo.svg';
-import './Home.css';
-import Mfe1Title from 'Mfe1/Title';
-import Mfe2Title from 'Mfe2/Title';
-import Mfe3Title from 'Mfe3/Title';
-import RemoteWrapper from '../../components/RemoteWrapper';
+import logo from "./logo.svg";
+import "./Home.css";
+import RemoteLoader from "../../remote/RemoteLoader";
 
 function App() {
   return (
@@ -22,9 +18,33 @@ function App() {
         >
           Learn React
         </a>
-        <RemoteWrapper><Mfe1Title /></RemoteWrapper>
-        <RemoteWrapper><Mfe2Title /></RemoteWrapper>
-        <RemoteWrapper><Mfe3Title /></RemoteWrapper>
+        <div>
+          <RemoteLoader
+            data={{
+              url: "http://localhost:3001/remoteEntry.js",
+              scope: "Mfe1",
+              module: "./Title",
+            }}
+          />
+        </div>
+        <div>
+          <RemoteLoader
+            data={{
+              url: "http://localhost:3002/remoteEntry.js",
+              scope: "Mfe2",
+              module: "./Title",
+            }}
+          />
+        </div>
+        <div>
+          <RemoteLoader
+            data={{
+              url: "http://localhost:3003/remoteEntry.js",
+              scope: "Mfe3",
+              module: "./Title",
+            }}
+          />
+        </div>
       </header>
     </div>
   );

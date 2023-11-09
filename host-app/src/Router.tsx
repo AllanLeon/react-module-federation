@@ -1,11 +1,9 @@
 import { FunctionComponent, PropsWithChildren } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import Home from "./pages/Home/Home";
-import Dogs from "Mfe1/Dogs";
-import Cats from "Mfe1/Cats";
-import Pokemon from "Mfe2/Pokemon";
 import Root from "./Root";
+import Home from "./pages/Home/Home";
+import RemoteLoader from "./remote/RemoteLoader";
 
 const router = createBrowserRouter([
   {
@@ -18,15 +16,39 @@ const router = createBrowserRouter([
       },
       {
         path: "/dogs",
-        element: <Dogs />,
+        element: (
+          <RemoteLoader
+            data={{
+              url: "http://localhost:3001/remoteEntry.js",
+              scope: "Mfe1",
+              module: "./Dogs",
+            }}
+          />
+        ),
       },
       {
         path: "/cats",
-        element: <Cats />,
+        element: (
+          <RemoteLoader
+            data={{
+              url: "http://localhost:3001/remoteEntry.js",
+              scope: "Mfe1",
+              module: "./Cats",
+            }}
+          />
+        ),
       },
       {
         path: "/pokemon",
-        element: <Pokemon />,
+        element: (
+          <RemoteLoader
+            data={{
+              url: "http://localhost:3002/remoteEntry.js",
+              scope: "Mfe2",
+              module: "./Pokemon",
+            }}
+          />
+        ),
       },
     ],
   },
