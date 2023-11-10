@@ -14,10 +14,6 @@ module.exports = function (config, env) {
           "./Cats": "./src/pages/Cats",
         },
         filename: "remoteEntry.js",
-        remotes: {
-          Mfe2: `Mfe2@http://localhost:3002/remoteEntry.js`,
-          Mfe3: `Mfe3@http://localhost:3003/remoteEntry.js`,
-        },
         shared: {
           ...dependencies,
           react: {

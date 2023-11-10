@@ -1,6 +1,7 @@
+import { RemoteLoader } from "@poc/core";
+
 import logo from "./logo.svg";
 import "./Home.css";
-import RemoteLoader from "../../remote/RemoteLoader";
 
 function App() {
   return (

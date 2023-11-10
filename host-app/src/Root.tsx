@@ -1,6 +1,6 @@
 import { Outlet } from "react-router-dom";
 
-import RemoteLoader from "./remote/RemoteLoader";
+import { RemoteLoader } from "@poc/core";
 
 function Root() {
   return (

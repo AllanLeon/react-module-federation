@@ -1,9 +1,10 @@
 import { FunctionComponent, PropsWithChildren } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
+import {RemoteLoader} from "@poc/core";
+
 import Root from "./Root";
 import Home from "./pages/Home/Home";
-import RemoteLoader from "./remote/RemoteLoader";
 
 const router = createBrowserRouter([
   {

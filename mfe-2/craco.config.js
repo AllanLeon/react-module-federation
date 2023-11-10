@@ -2,9 +2,6 @@ const { dependencies } = require("./package.json");
 const { ModuleFederationPlugin } = require("webpack").container;
 
 module.exports = {
-    // devServer: {
-    //   port: 3002,
-    // },
   webpack: {
     plugins: {
       add: [
@@ -15,10 +12,6 @@ module.exports = {
             "./Pokemon": "./src/pages/Pokemon",
           },
           filename: "remoteEntry.js",
-          remotes: {
-            Mfe1: `Mfe1@http://localhost:3001/remoteEntry.js`,
-            Mfe3: `Mfe3@http://localhost:3003/remoteEntry.js`,
-          },
           shared: {
             ...dependencies,
             react: {
