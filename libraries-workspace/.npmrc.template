@@ -1,0 +1,2 @@
+@poc:registry=http://127.0.0.1:4873/
+//127.0.0.1:4873/:_authToken="{AUTH_TOKEN}"
