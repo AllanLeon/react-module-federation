@@ -11,7 +11,7 @@ module.exports = function (config, env) {
           "./Title": "./src/components/Title",
           "./NavBar": "./src/components/NavBar",
           "./Dogs": "./src/pages/Dogs",
-          "./Cats": "./src/pages/Cats",
+          "./Capybaras": "./src/pages/Capybaras",
         },
         filename: "remoteEntry.js",
         shared: {

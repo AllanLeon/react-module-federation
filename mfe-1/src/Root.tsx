@@ -9,8 +9,8 @@ function Root() {
         logo={"mfe-1"}
         items={[
           { label: "Home", path: "/" },
+          { label: "Capybaras", path: "/capybaras" },
           { label: "Dogs", path: "/dogs" },
-          { label: "Cats", path: "/cats" },
         ]}
       />
       <Outlet />

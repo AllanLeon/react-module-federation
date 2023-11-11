@@ -9,7 +9,7 @@ module.exports = {
           name: "Mfe2",
           exposes: {
             "./Title": "./src/components/Title",
-            "./Pokemon": "./src/pages/Pokemon",
+            "./Pokemon": "./src/pages/Pokemon/Pokemon",
           },
           filename: "remoteEntry.js",
           shared: {

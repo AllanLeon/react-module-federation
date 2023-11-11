@@ -2,7 +2,7 @@ import { FunctionComponent, PropsWithChildren } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import Home from "./pages/Home/Home";
-import Pokemon from "./pages/Pokemon";
+import Pokemon from "./pages/Pokemon/Pokemon";
 import Root from "./Root";
 
 const router = createBrowserRouter([

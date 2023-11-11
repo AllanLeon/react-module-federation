@@ -1,10 +1,10 @@
 import { FunctionComponent, PropsWithChildren } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
+import Root from "./Root";
 import Home from "./pages/Home/Home";
 import Dogs from "./pages/Dogs";
-import Cats from "./pages/Cats";
-import Root from "./Root";
+import Capybaras from "./pages/Capybaras";
 
 const router = createBrowserRouter([
   {
@@ -20,8 +20,8 @@ const router = createBrowserRouter([
         element: <Dogs />,
       },
       {
-        path: "/cats",
-        element: <Cats />,
+        path: "/capybaras",
+        element: <Capybaras />,
       },
     ],
   },

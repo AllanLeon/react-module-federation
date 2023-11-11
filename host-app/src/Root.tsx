@@ -15,8 +15,8 @@ function Root() {
           logo: "host-app",
           items: [
             { label: "Home", path: "/" },
+            { label: "Capybaras", path: "/capybaras" },
             { label: "Dogs", path: "/dogs" },
-            { label: "Cats", path: "/cats" },
             { label: "Pokemon", path: "/pokemon" },
           ],
         }}
