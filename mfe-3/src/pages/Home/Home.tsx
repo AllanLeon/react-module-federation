@@ -1,9 +1,9 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
-import Title from './components/Title';
+import './Home.css';
+import Title from '../../components/Title';
 
-function App() {
+function Home() {
   return (
     <div className="App">
       <header className="App-header">
@@ -25,4 +25,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;

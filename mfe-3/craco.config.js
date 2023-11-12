@@ -9,6 +9,7 @@ module.exports = {
           name: "Mfe3",
           exposes: {
             "./Title": "./src/components/Title",
+            "./NavBar": "./src/components/NavBar",
           },
           filename: "remoteEntry.js",
           shared: {
@@ -21,6 +22,11 @@ module.exports = {
             "react-dom": {
               singleton: true,
               requiredVersion: dependencies["react-dom"],
+              eager: true,
+            },
+            "react-router-dom": {
+              singleton: true,
+              requiredVersion: dependencies["react-router-dom"],
               eager: true,
             },
           },

@@ -9,7 +9,6 @@ module.exports = function (config, env) {
         name: "Mfe1",
         exposes: {
           "./Title": "./src/components/Title",
-          "./NavBar": "./src/components/NavBar",
           "./Dogs": "./src/pages/Dogs",
           "./Capybaras": "./src/pages/Capybaras",
         },

@@ -7,8 +7,8 @@ function Root() {
     <div>
       <RemoteLoader
         data={{
-          url: "http://localhost:3001/remoteEntry.js",
-          scope: "Mfe1",
+          url: "http://localhost:3003/remoteEntry.js",
+          scope: "Mfe3",
           module: "./NavBar",
         }}
         componentProps={{
