@@ -14,7 +14,7 @@ const Pokemon: FunctionComponent = () => {
     const fetchPokemon = async () => {
       const offset = Math.floor(Math.random() * 1200);
       const response = await fetch(
-        `https://pokeapi.co/api/v2/pokemon?limit=10&offset=${offset}`
+        `https://pokeapi.co/api/v2/pokemon?limit=12&offset=${offset}`
       );
       const result = await response.json();
       setPokemon(result.results);

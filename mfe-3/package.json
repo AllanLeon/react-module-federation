@@ -27,7 +27,8 @@
     "start": "PORT=3003 craco start",
     "build": "craco build",
     "test": "craco test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "link:libs": "npm link @poc/core @poc/components"
   },
   "eslintConfig": {
     "extends": [

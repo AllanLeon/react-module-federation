@@ -17,7 +17,7 @@ const Capybaras: FunctionComponent = () => {
     const fetchCapybaras = async () => {
       const offset = Math.floor(Math.random() * 50);
       const response = await fetch(
-        `https://api.capy.lol/v1/capybaras?take=10&from=${offset}`
+        `https://api.capy.lol/v1/capybaras?take=12&from=${offset}`
       );
       const result = await response.json();
       setCapybaras(result.data);
@@ -32,7 +32,11 @@ const Capybaras: FunctionComponent = () => {
       <div className="row">
         {capybaras.map(({ url, alt }, index) => (
           <div className="col-3 mb-3" key={index}>
-            <Card imgSrc={url} imgAlt="Capybara" description={alt} />
+            <Card
+              imgSrc={url}
+              imgAlt="Capybara"
+              description={alt}
+            />
           </div>
         ))}
       </div>

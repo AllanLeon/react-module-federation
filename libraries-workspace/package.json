@@ -5,8 +5,8 @@
   "scripts": {
     "build:core": "nx build core",
     "build:components": "nx build components",
-    "publish:core": "cd ./dist/packages/core && npm publish --registry http://127.0.0.1:4873/",
-    "publish:components": "cd ./dist/packages/components && npm publish --registry http://127.0.0.1:4873/",
+    "publish:core": "npm run build:core && cd ./dist/packages/core && npm publish --registry http://127.0.0.1:4873/",
+    "publish:components": "npm run build:components && cd ./dist/packages/components && npm publish --registry http://127.0.0.1:4873/",
     "link:core": "cd ./dist/packages/core && npm link",
     "link:components": "cd ./dist/packages/components && npm link"
   },

@@ -31,7 +31,7 @@
     "build": "craco build",
     "test": "craco test",
     "eject": "react-scripts eject",
-    "link:libs": "npm link @poc/core"
+    "link:libs": "npm link @poc/core @poc/components"
   },
   "eslintConfig": {
     "extends": [

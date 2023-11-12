@@ -8,7 +8,7 @@ const Dogs: FunctionComponent = () => {
   useEffect(() => {
     const fetchDogs = async () => {
       const response = await fetch(
-        "https://dog.ceo/api/breeds/image/random/10"
+        "https://dog.ceo/api/breeds/image/random/12"
       );
       const result = await response.json();
       setDogs(result.message);
