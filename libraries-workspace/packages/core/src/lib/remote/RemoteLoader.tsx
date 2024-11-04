@@ -24,7 +24,7 @@ const RawRemoteLoader: FunctionComponent<
     return errorFallback;
   }
 
-  return FederatedComponent && <FederatedComponent {...componentProps} />;
+  return !!FederatedComponent && <FederatedComponent {...componentProps} />;
 };
 
 export const RemoteLoader: FunctionComponent<RemoteWrapperProps> = ({

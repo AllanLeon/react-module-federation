@@ -6,7 +6,7 @@ module.exports = function (config, env) {
   config.plugins.push(
     new ModuleFederationPlugin(
       (module.exports = {
-        name: "host_app",
+        name: "HostApp",
         shared: {
           ...dependencies,
           react: {
