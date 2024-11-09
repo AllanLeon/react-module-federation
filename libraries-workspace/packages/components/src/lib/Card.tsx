@@ -5,6 +5,7 @@ export interface CardProps {
   imgAlt?: string;
   title?: ReactNode;
   description?: ReactNode;
+  customClass?: string;
 }
 
 export const Card: FunctionComponent<CardProps> = ({
